@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zavatta.Lorenzo._4H.ImageLayout.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="labelStyle">
+                <Setter Property="TextColor" Value="Black"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+
+        <Label
+            
+            Text="Automobili"
+            Grid.Row="0"
+            Grid.Column="1" 
+            HorizontalTextAlignment="Center" 
+            VerticalTextAlignment="Center" 
+            Style="{StaticResource labelStyle}">
+
+        </Label>
+
+
+        <Image 
+            
+            Source="Image/TeslaX.png" 
+            Grid.Column="0" 
+            Grid.Row="0">
+
+        </Image>
+
+        <Image 
+            
+            Source="Image/TeslaX.png" 
+            Grid.Column="2" 
+            Grid.Row="0">
+
+        </Image>
+
+
+        <Label 
+            
+            Grid.Row="2" 
+            Grid.Column="1"
+            Text="Lamborghini"
+            BackgroundColor="Gold"
+            TextColor="White"
+            HorizontalTextAlignment="Center" 
+            VerticalTextAlignment="Center" 
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="2"
+            >
+
+        </Label>
+
+        <Label 
+            
+            Grid.Row="1" 
+            Grid.Column="1"
+            Text="Ferrari"
+            BackgroundColor="Red"
+            TextColor="White"
+            HorizontalTextAlignment="Center" 
+            VerticalTextAlignment="Center" 
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="2"
+            >
+
+        </Label>
+
+        <Label 
+            
+            Grid.Row="3" 
+            Grid.Column="1"
+            Text="Tesla"
+            BackgroundColor="Gray"
+            TextColor="White"
+            HorizontalTextAlignment="Center" 
+            VerticalTextAlignment="Center" 
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="2"
+            >
+
+        </Label>
+
+
+        <Button
+            
+            Grid.Row="1"
+            Grid.Column="2"
+            Margin="5"
+            Text="Site"
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand">
+
+        </Button>
+
+        <Button
+            
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="5"
+            Text="Site"
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand">
+
+        </Button>
+
+        <Button
+            
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="5"
+            Text="Site"
+            FontAttributes="Bold"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand">
+
+        </Button>
+
+
+        <Image 
+            
+            Source="Image/Ferrari.png"
+            Grid.Row="1" 
+            Grid.Column="0">
+
+        </Image>
+
+        <Image 
+            
+            Source="Image/Lamborghini.png"
+            Grid.Row="2" 
+            Grid.Column="0">
+
+        </Image>
+
+        <Image 
+            
+            Source="Image/Tesla.png"
+            Grid.Row="3" 
+            Grid.Column="0">
+
+        </Image>
+
+        <Grid Grid.Row="4" Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image
+                
+                Grid.Column="0"
+                Grid.Row="1"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="Image/Instagram.png">
+
+            </Image>
+            <Image
+                
+                Grid.Column="1"
+                Grid.Row="1"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="Image/WhatsApp.png">
+
+            </Image>
+            <Image
+                
+                Grid.Column="2"
+                Grid.Row="1"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="Image/LinkedIn.png">
+
+            </Image>
+            <Button
+                
+                Grid.Column="0"
+                Grid.Row="1">
+
+            </Button>
+            <Button
+
+                Grid.Column="1"
+                Grid.Row="1">
+
+            </Button>
+            <Button
+               
+                Grid.Column="2"
+                Grid.Row="1">
+
+            </Button>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
